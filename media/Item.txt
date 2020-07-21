@@ -1,0 +1,2 @@
+pf_id|names|description|short_description|status|key_words|show_list|promotion_value|promotion_value_2|style_group_id|model_wears|show_sale_in_fullprice_category|restrict_to_country|max_quantity_order_limit|product_restriction_copy|Column1|price
+4028473|MK-1 Warm-Up Trouser||Under Armour MK-1 Warm-Up Trousers in Black. Lightweight double-knit fabric that offers breathability and mobility as well as superior sweat-wicking properties. Adjustable drawstring waistband with tapered leg and faux fly. Open hand pockets.|1||1|||4028473||0||||0|1500
