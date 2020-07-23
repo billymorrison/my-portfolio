@@ -1,22 +1,80 @@
+body {
+    background-image: url("../media/beanstalk.png");
+    --theme-1: #aeb029;
+    --theme-2: #FA9805;
+    --theme-3: #8363b1;
+    --theme-4: #c58559;
+    --theme-5: #8B482A;
+    --ignore-body-width: -40px;
+    margin: auto;
+    font-family: Rubik, sans-serif;
+    padding: 40px;
+}
+
 header {
     display: flex;
     flex-wrap: wrap;
-    
+    justify-content: space-between;
+    align-content: center;
+    background-color: var(--theme-3);
+    position: relative;
+    left: -40px;
+    top: -40px;
+    width: 100vw;
+    height: 140px;
 }
 
 header h1 {
-    width: 100%;
-    text-align: center;    
+    text-align: left; 
+    color: var(--theme-2);
+    font-size: 48px; 
+    margin: 10px 40px;  
 }
 
-header ul {
-    width: 100%;
+header nav ul {
+    height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 40px 0 0;
+    margin: 0;
 }
 
-header li {
-    display: inline;
-    padding: 0 20px 0 20px;
-    flex: 1 0 auto;
+header nav li {
+    list-style-type: none;
 }
+
+header nav li a {
+    display: inline;
+    padding: 15px;
+    margin: 5px;
+    flex: 0 0 auto;
+    color: white;
+    border: 3px solid var(--theme-2);
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+header nav li a:hover {
+    background-color: var(--theme-2);
+}
+
+header nav li a:visited {
+    color: white;
+
+}
+
+main article {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-me {
+    width: 500px;
+}
+
+.portrait img {
+    width: 300px;
+}
+
