@@ -74,11 +74,14 @@ header nav li a:active {
 /* Home Page Styles -------------------------------------------------------------------------
 */
 
-main article {
+main {
+    min-height: 520px;
+}
+
+#about-me {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 700px;
 }
 
 .about-me {
