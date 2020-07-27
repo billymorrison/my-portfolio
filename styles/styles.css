@@ -181,6 +181,15 @@ footer a {
         text-decoration: none;
         
     }
+
+    .attribution {
+        font-size: 0.5em;
+        max-width: 150px;
+    }
+
+    .attribution a {
+        font-size: 1.7em;
+    }
 }
 
 
