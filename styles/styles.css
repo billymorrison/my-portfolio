@@ -11,6 +11,9 @@ body {
     padding: 40px;
 }
 
+/* Header Styles --------------------------------------------------------------------------
+*/
+
 header {
     display: flex;
     flex-wrap: wrap;
@@ -64,10 +67,14 @@ header nav li a:visited {
 
 }
 
+/* Home Page Styles -------------------------------------------------------------------------
+*/
+
 main article {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    min-height: 700px;
 }
 
 .about-me {
@@ -77,4 +84,39 @@ main article {
 .portrait img {
     width: 300px;
 }
+
+/* Footer Styles ----------------------------------------------------------------------------
+*/
+
+footer {
+    background-color: var(--theme-5);
+    height: 150px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+footer ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0;
+}
+
+footer a, footer h2 {
+    color: white !important;
+}
+
+footer a {
+    font-size: 24px;
+}
+
+
+
 
