@@ -8,7 +8,7 @@ body {
     --ignore-body-width: -40px;
     margin: auto;
     font-family: Rubik, sans-serif;
-    padding: 40px;
+    padding: 0 40px;
 }
 
 /* Header Styles --------------------------------------------------------------------------
@@ -22,9 +22,8 @@ header {
     background-color: var(--theme-3);
     position: relative;
     left: -40px;
-    top: -40px;
     width: 100vw;
-    height: 140px;
+    height: 170px;
 }
 
 header h1 {
@@ -64,6 +63,11 @@ header nav li a:hover {
 
 header nav li a:visited {
     color: white;
+}
+
+header nav li a:active {
+    color: white;
+    background-color: var(--theme-2);
 
 }
 
@@ -91,8 +95,15 @@ main article {
 footer {
     background-color: var(--theme-5);
     height: 150px;
+    width: 100%;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    right: 40px;
+    margin: 0px;
+    padding: 0 40px;
 }
 
 footer nav {
@@ -105,7 +116,7 @@ footer nav {
 footer ul {
     display: flex;
     list-style-type: none;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 0;
 }
 
@@ -117,6 +128,14 @@ footer a {
     font-size: 24px;
 }
 
+.social-icon {
+    width: 30px;
+    height: auto;
+}
+
+.attribution {
+    color: white;
+}
 
 
 
