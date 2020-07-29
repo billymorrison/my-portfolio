@@ -20,26 +20,37 @@
             </nav>
         </header>
         
-        <main>
+        <main class="contact">
             <h2>How to get in touch</h2>
             <p>For all enquiries please fill out the form below. If you are interested in collaborating on a project then it'd be great to have a look at your Github profile.</p>
+            <p>Required fields are marked with a *</p><br>
             <form action="/mail" method="POST"> 
-                <label>
-                    Name<br><input type="text" placeholder="Varian Wrynn" id="name" required>
-                </label><br>
-                <label>
-                    Email<br><input type="email" placeholder="v.wrynn@stormwindkeep.com" id="email" required>
-                </label><br>
-                <label>
-                    Phone Number (Optional)<br><input type="tel" placeholder="0161 123 4567" id="phone">
-                </label><br>
-                <label>
-                    Github Profile URL (Optional)<br><input type="text" id="github" placeholder="https://github.com/varianwrynn">
-                </label><br>
-                <label>
-                    Message<br><input type="textarea" id="message">
-                </label><br>
-                <button type="submit">Send</button>
+                <fieldset>
+                    <legend>Your Contact Details</legend>
+                    <ul>
+                        <li>
+                            <label>Name *</label>
+                            <input type="text" placeholder="Name *" id="name" required>                           
+                        </li><br>
+                        <li>
+                            <label>Email *</label>
+                            <input type="email" placeholder="Email *" id="email" required>                            
+                        </li><br>
+                        <li>
+                            <label>Phone Number</label>
+                            <input type="tel" placeholder="Phone Number" id="phone">                           
+                        </li><br>
+                        <li>
+                            <label>Github Profile URL (Optional)</label>
+                            <input type="text" id="github" placeholder="Github Profile URL">                           
+                        </li><br>
+                        <li>
+                            <label>Message *</label>
+                            <textarea id="message" placeholder="Message *"></textarea>                       
+                        </li><br>
+                        <button type="submit">Send</button>
+                    </ul>
+                </fieldset>
             </form>
         </main>
         <footer>
