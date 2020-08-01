@@ -6,6 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="styles/styles.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <script>
+            /*function printName() {
+                var name = document.querySelector('#name').nodeValue;
+                console.log(name);
+            };*/
+                  
+            
+        </script>
     </head>
     <body>
         <header>
@@ -24,7 +32,7 @@
             <h2>How to get in touch</h2>
             <p>For all enquiries please fill out the form below. If you are interested in collaborating on a project then it'd be great to have a look at your Github profile.</p>
             <p>Required fields are marked with a *</p><br>
-            <form action="/mail" method="POST"> 
+            <form method="POST"> 
                 <fieldset>
                     <legend>Your Contact Details</legend>
                     <ul>
@@ -37,10 +45,6 @@
                             <input type="email" placeholder="Email *" id="email" required>                            
                         </li><br>
                         <li>
-                            <label>Phone Number</label>
-                            <input type="tel" placeholder="Phone Number" id="phone">                           
-                        </li><br>
-                        <li>
                             <label>Github Profile URL (Optional)</label>
                             <input type="text" id="github" placeholder="Github Profile URL">                           
                         </li><br>
@@ -48,8 +52,32 @@
                             <label>Message *</label>
                             <textarea id="message" placeholder="Message *"></textarea>                       
                         </li><br>
-                        <button type="submit">Send Your Details</button>
-                        <button type="reset">Clear Form</button>
+                        <button id="submit" type="submit">Send Your Details</button>
+                        <button id="clear" type="reset">Clear Form</button>
+                        <script>
+                        function printName(e) {
+                            let name = document.querySelector('#name').value;
+                            let email = document.querySelector('#email').value;
+                            let github = document.querySelector('#github').value;
+                            let message = document.querySelector('#message').value;
+                            if (!name || !email || !message) {
+                                window.alert("Please fill in the required fields")
+                            } else {
+                            if (github) {
+                            window.alert(`Name: ${name}
+Email: ${email}
+Github URL: ${github}
+Message: ${message}`);
+                            } else {
+                            window.alert(`Name: ${name}
+Email: ${email}
+Message: ${message}`);   
+                            }
+                        }
+                        };
+                        document.getElementById('submit').addEventListener('click', printName) 
+                        
+            </script>
                     </ul>
                 </fieldset>
             </form>
